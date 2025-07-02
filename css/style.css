@@ -424,7 +424,7 @@ section::before {
   overflow: hidden;
   position: relative;
   z-index: 1;
-  padding-top: 140px;
+  padding-top: 180px;
 }
 
 .slider-main::before {
@@ -455,13 +455,14 @@ section::before {
   width: 50%;
   padding-block: 40px;
   max-width: 525px;
-  height: 100%;
+  height: fit-content;
   background: rgba(255, 255, 255, 0.02);
   backdrop-filter: blur(40px);
   border-radius: 20px;
   border: 1px solid rgba(255, 255, 255, 0.08);
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
   padding: 60px 40px;
+  margin-top: -60px;
 }
 
 /* content */
@@ -780,6 +781,7 @@ section::before {
   .slider-main {
     flex-direction: column;
     min-height: 900px;
+    padding-top: 120px;
   }
   .social-icons a {
     width: 35px;
