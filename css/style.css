@@ -21,7 +21,9 @@ body {
   position: relative;
   font-family: "Inter", sans-serif;
   height: 100svh;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
+  background: linear-gradient(135deg, #ff6b6b 0%, #4ecdc4 25%, #45b7d1 50%, #96ceb4 75%, #feca57 100%);
+  background-size: 400% 400%;
+  animation: gradientShift 15s ease infinite;
 }
 
 a {
@@ -62,11 +64,12 @@ p {
   position: fixed;
   top: 0;
   width: 100%;
-  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
   z-index: 1000;
   padding: 1.2rem 0;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 8px 32px rgba(102, 126, 234, 0.4);
+  backdrop-filter: blur(10px);
 }
 
 .nav-container {
@@ -193,17 +196,17 @@ section::before {
 }
 
 #products {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
+  background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 50%, #fecfef 100%);
   animation: gradientShift 15s ease infinite;
 }
 
 #about {
-  background: linear-gradient(135deg, #f093fb 0%, #f5576c 50%, #667eea 100%);
+  background: linear-gradient(135deg, #a8edea 0%, #fed6e3 50%, #ff9a9e 100%);
   animation: gradientShift 12s ease infinite reverse;
 }
 
 #contact {
-  background: linear-gradient(135deg, #4facfe 0%, #00f2fe 50%, #764ba2 100%);
+  background: linear-gradient(135deg, #ff6b6b 0%, #4ecdc4 50%, #45b7d1 100%);
   animation: gradientShift 18s ease infinite;
 }
 
@@ -318,10 +321,12 @@ section::before {
   font-size: 1.5rem;
   font-weight: 800;
   margin-top: 1.5rem;
-  background: linear-gradient(45deg, #4facfe, #00f2fe);
+  background: linear-gradient(45deg, #ff6b6b, #feca57, #4ecdc4);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+  background-size: 200% auto;
+  animation: gradientMove 4s linear infinite;
 }
 
 /* Contact Form */
@@ -585,7 +590,7 @@ section::before {
 }
 
 .price-highlight {
-  background: linear-gradient(45deg, #4facfe, #00f2fe, #4facfe);
+  background: linear-gradient(45deg, #ff6b6b, #feca57, #48cae4, #ff6b6b);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -603,17 +608,17 @@ section::before {
 }
 
 .premium-btn {
-  background: linear-gradient(45deg, #4facfe, #00f2fe);
+  background: linear-gradient(45deg, #ff6b6b, #feca57);
   border: none;
   font-size: 1.1rem;
   font-weight: 700;
   padding: 1.5rem 3rem;
-  box-shadow: 0 10px 30px rgba(79, 172, 254, 0.3);
+  box-shadow: 0 10px 30px rgba(255, 107, 107, 0.4);
 }
 
 .premium-btn:hover {
-  background: linear-gradient(45deg, #00f2fe, #4facfe);
-  box-shadow: 0 15px 40px rgba(79, 172, 254, 0.5);
+  background: linear-gradient(45deg, #feca57, #ff6b6b);
+  box-shadow: 0 15px 40px rgba(254, 202, 87, 0.6);
   transform: translateY(-5px) scale(1.05);
 }
 
