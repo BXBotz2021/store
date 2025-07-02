@@ -74,10 +74,10 @@ p {
 }
 
 .nav-logo img {
-  width: 120px;
-  height: 40px;
+  width: 30px;
+  height: 35px;
   object-fit: contain;
-  filter: brightness(1.1) contrast(1.1);
+  filter: brightness(0) saturate(100%);
   transition: all 0.3s ease;
 }
 
@@ -756,8 +756,8 @@ section::before {
   }
   
   .nav-logo img {
-    width: 100px;
-    height: 35px;
+    width: 25px;
+    height: 30px;
     object-fit: contain;
   }
   
