@@ -1,6 +1,4 @@
 
-var backgrounds = document.querySelectorAll('.background');
-
 const slider = document.querySelector('.slider-images');
 const images = Array.from(slider.children);
 
@@ -31,23 +29,28 @@ function updateSlider() {
         }
     });
 
-    backgrounds.forEach((background) => {
-        background.style.opacity = 0;
-    });
-    if (images[imageIndex].classList.contains('active')) {
-        backgrounds[imageIndex].style.opacity = 1;
-    }
     imageIndex = (imageIndex + 1) % images.length;
 }
-updateSlider();
 
+// Initialize slider
+function initializeSlider() {
+    if (images.length > 0) {
+        images[0].classList.add('active');
+        if (images.length > 1) {
+            images[1].classList.add('next');
+        }
+        if (images.length > 2) {
+            images[images.length - 1].classList.add('previous');
+            for (let i = 2; i < images.length - 1; i++) {
+                images[i].classList.add('inactive');
+            }
+        }
+    }
+}
+
+// Start the slider
+initializeSlider();
 setInterval(updateSlider, 3000);
-
-images[1].classList.add('next');
-images[2].classList.add('inactive');
-images[3].classList.add('inactive');
-images[4].classList.add('previous');
-images[0].classList.add('active');
 
 // Mobile Navigation
 const hamburger = document.querySelector('.hamburger');
