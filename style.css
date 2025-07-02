@@ -59,8 +59,9 @@ p {
 }
 
 .nav-logo img {
-  width: 180px;
-  height: auto;
+  width: 120px;
+  height: 40px;
+  object-fit: contain;
 }
 
 .nav-menu {
@@ -316,7 +317,9 @@ p {
   }
   
   .nav-logo img {
-    width: 150px;
+    width: 100px;
+    height: 35px;
+    object-fit: contain;
   }
   
   .hamburger.active .bar:nth-child(2) {
