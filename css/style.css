@@ -192,7 +192,7 @@ section::before {
 }
 
 #home {
-  padding: 120px 30px 40px;
+  padding: 140px 30px 40px;
 }
 
 #products {
@@ -432,7 +432,7 @@ section::before {
   overflow: hidden;
   position: relative;
   z-index: 1;
-  padding-top: 80px;
+  padding-top: 140px;
   box-shadow: inset 0 0 100px rgba(0, 0, 0, 0.1);
 }
 
