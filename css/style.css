@@ -432,7 +432,7 @@ section::before {
   overflow: hidden;
   position: relative;
   z-index: 1;
-  padding-top: 120px;
+  padding-top: 80px;
   box-shadow: inset 0 0 100px rgba(0, 0, 0, 0.1);
 }
 
@@ -466,7 +466,7 @@ section::before {
   position: relative;
   left: calc(50% - (1140px / 2));
   width: 50%;
-  padding-block: 100px;
+  padding-block: 40px;
   max-width: 525px;
   height: 100%;
 }
