@@ -1,0 +1,14 @@
+
+{
+  "name": "headphone-store",
+  "version": "1.0.0",
+  "description": "A headphone store website with product slider",
+  "main": "index.html",
+  "scripts": {
+    "dev": "python -m http.server 5000",
+    "start": "python -m http.server 5000"
+  },
+  "keywords": ["headphones", "store", "slider"],
+  "author": "",
+  "license": "MIT"
+}
