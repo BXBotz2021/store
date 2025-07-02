@@ -1,19 +1,18 @@
+
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>ONLINE STORE</title>
-  <link rel="stylesheet" href="./style.css">
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Premium Tech Store</title>
+  <link rel="stylesheet" href="./css/style.css">
 </head>
-<body>
-
 <body>
 
 <nav class="navbar">
     <div class="nav-container">
         <div class="nav-logo">
-            <a href="#"><img src="https://i.ibb.co/BHr5sx7t/x.jpg" alt="logo"></a>
+            <a href="#home"><img src="https://i.ibb.co/BHr5sx7t/x.jpg" alt="Premium Tech Store"></a>
         </div>
         <ul class="nav-menu">
             <li class="nav-item">
@@ -73,9 +72,84 @@
     </div>
 </section>
 
-</body>
+<section id="products">
+    <div class="section-content">
+        <h2>Our Products</h2>
+        <p>Explore our premium collection of smartphones and accessories</p>
+        <div class="products-grid">
+            <div class="product-card">
+                <h3>iPhone 15 Pro Max</h3>
+                <p>Latest flagship smartphone with advanced camera system and A17 Pro chip</p>
+                <div class="price">₹1,59,900</div>
+                <button class="btn">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <h3>iPhone 15</h3>
+                <p>Standard model with excellent performance and camera quality</p>
+                <div class="price">₹79,900</div>
+                <button class="btn">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <h3>AirPods Pro</h3>
+                <p>Premium wireless earbuds with active noise cancellation</p>
+                <div class="price">₹24,900</div>
+                <button class="btn">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <h3>iPhone Accessories</h3>
+                <p>Cases, chargers, and other premium accessories</p>
+                <div class="price">Starting at ₹2,900</div>
+                <button class="btn">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+</section>
 
-  <script  src="./script.js"></script>
+<section id="about">
+    <div class="section-content">
+        <h2>About Us</h2>
+        <p>We are a premium technology retailer dedicated to bringing you the latest and greatest in smartphones and accessories. Our carefully curated collection features only the highest quality products from trusted brands.</p>
+        <p>With years of experience in the tech industry, we understand what our customers need and strive to provide exceptional service and competitive prices.</p>
+        <div style="margin-top: 2rem;">
+            <h3 style="color: #fff; margin-bottom: 1rem;">Why Choose Us?</h3>
+            <ul style="color: #fff; text-align: left; max-width: 600px; margin: 0 auto;">
+                <li style="margin-bottom: 0.5rem;">✓ Authentic products with warranty</li>
+                <li style="margin-bottom: 0.5rem;">✓ Fast and secure delivery</li>
+                <li style="margin-bottom: 0.5rem;">✓ Expert customer support</li>
+                <li style="margin-bottom: 0.5rem;">✓ Competitive pricing</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<section id="contact">
+    <div class="section-content">
+        <h2>Contact Us</h2>
+        <p>Get in touch with us for any questions or support</p>
+        <form id="contact-form" class="contact-form">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Your Name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="your.email@example.com" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" placeholder="Your message..." required></textarea>
+            </div>
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+        <div style="margin-top: 2rem; color: #fff;">
+            <p><strong>Email:</strong> info@premiumtechstore.com</p>
+            <p><strong>Phone:</strong> +91 98765 43210</p>
+            <p><strong>Address:</strong> 123 Tech Street, Digital City, India</p>
+        </div>
+    </div>
+</section>
+
+<script src="./js/script.js"></script>
 
 </body>
 </html>
