@@ -62,12 +62,11 @@ p {
   position: fixed;
   top: 0;
   width: 100%;
-  background: rgba(255, 255, 255, 0.08);
-  backdrop-filter: blur(20px);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
   z-index: 1000;
   padding: 1.2rem 0;
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
 }
 
 .nav-container {
@@ -190,7 +189,7 @@ section::before {
 }
 
 #home {
-  padding: 0;
+  padding: 120px 30px 40px;
 }
 
 #products {
@@ -428,7 +427,7 @@ section::before {
   overflow: hidden;
   position: relative;
   z-index: 1;
-  padding-top: 100px;
+  padding-top: 120px;
   box-shadow: inset 0 0 100px rgba(0, 0, 0, 0.1);
 }
 
